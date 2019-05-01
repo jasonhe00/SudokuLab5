@@ -6,7 +6,7 @@ import java.util.Map;
 public enum eGameDifficulty {
 	EASY(100), MEDIUM(500), HARD(1000);
 	
-	private final Integer iDifficultyValue;
+	private final int iDifficultyValue;
 	
 	private static final Map<Integer, eGameDifficulty> lookup = new HashMap<Integer, eGameDifficulty>();
 	
@@ -24,7 +24,7 @@ public enum eGameDifficulty {
         return iDifficultyValue;
     }
 
-    public static eGameDifficulty get(Integer value) {
+    public static eGameDifficulty get(int value) {
         return lookup.get(value);
     }
 }
